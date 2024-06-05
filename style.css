@@ -1,0 +1,201 @@
+/* ================= Basic Reset ================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+  padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(5, 10, 42);
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ================= Styling ================= */
+.wrapper {
+    max-width: 1000px;
+    margin-inline: auto;
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    row-gap: 2rem;
+    padding: 2rem 2rem 5rem 2rem;
+}
+
+.wrapper .title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 10px rgb(21, 21, 180);
+}
+
+.wrapper #alert__msg {
+    text-align: center;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .25rem;
+}
+
+.wrapper #alert__msg.error {
+    background-color: rgb(219, 26, 26);
+}
+
+.wrapper #alert__msg.success {
+    background-color: green;
+}
+
+.wrapper .input__container {
+    width: 100%;
+    /* border: 1px solid white; */
+}
+
+.wrapper .input__container form {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.wrapper .input__container form .inp__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: .55rem;
+}
+
+.wrapper .input__container form .inp__box label {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+.wrapper .input__container form .inp__box input {
+    font-size: 1.1rem;
+    padding: .65rem .45rem;
+    border-radius: .25rem;
+    outline: none;
+}
+
+.wrapper .input__container form button {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    border: none;
+    background-color: rgb(11, 37, 141);
+    padding: .85rem;
+    border-radius: .25rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.wrapper .input__container form button:hover {
+    background-color: rgb(8, 28, 109);
+    transform: scale(0.99);
+}
+
+/* ================= Divider ================= */
+.divider {
+    padding: 0.01px;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(72, 72, 72);
+    margin-block: 2rem;
+}
+/* ================= Result Container ================= */
+.result__container {
+    width: 100%;
+    height: 100%;
+}
+
+.result__container table {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.result__container table tr th {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 1rem;
+    width: auto;
+    border-bottom: 1px solid rgb(72, 72, 72);
+}
+
+.result__container table tr {
+    width: auto;
+    height: 100%;
+}
+
+.result__container table tr td {
+    height: 100%;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    padding: 1rem;
+    width: auto;
+    line-height: 1.6;
+    border-bottom: 1px solid rgb(72, 72, 72);
+}
+
+.result__container table tr .action__btn {
+    display: flex;
+    align-items: center;
+    column-gap: .45rem;
+}
+
+.result__container table tr .action__btn button {
+    border: none;
+    font-size: 1.2rem;
+    padding: .45rem .55rem;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+
+.result__container table tr .action__btn button:nth-child(1) {
+    background-color: green;
+    color: white;
+}
+
+.result__container table tr .action__btn button:nth-child(2) {
+    background-color: rgb(184, 54, 31);
+    color: white;
+}
+
+
+
