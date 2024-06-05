@@ -45,7 +45,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2rem;
     row-gap: 2rem;
     padding: 2rem 2rem 5rem 2rem;
 }
@@ -199,3 +198,58 @@ img {
 
 
 
+@media only screen and (max-width: 576px) {
+    .wrapper{
+        max-width: 500px;
+        padding: 1rem;
+        width: 100%;
+        row-gap: 1rem;
+        align-items: center;
+    }
+
+    .wrapper .title {
+        font-size: 1.6rem;
+    }
+
+    .wrapper .input__container form .inp__box label {
+        font-size: .8rem;
+    }
+
+    .wrapper .input__container form .inp__box input {
+        font-size: .75rem;
+        padding: .5rem .25rem;
+    }
+
+    .wrapper .input__container form button {
+        font-size: .75rem;
+    }
+
+    .divider {
+        margin-block: .4rem;
+    }
+
+    .result-container, .input__container {
+      overflow-x: auto;
+      width: 100vw; /* set width to full viewport width */
+    }
+
+    .result__container table tr th{
+        font-size: .65rem;
+        letter-spacing: 1px;
+        padding: .5rem;
+    }
+
+    .result__container table tr .action__btn button {
+        border: none;
+        font-size: .7rem;
+        padding: .3rem .4rem;
+        border-radius: .25rem;
+    }
+
+    .result__container table tr td {
+        font-size: .7rem;
+        padding: .6rem;
+        width: auto;
+        line-height: 1.6;
+    }
+  }
