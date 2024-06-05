@@ -36,20 +36,6 @@ tableBody.addEventListener("click", (e) => {
         showAlert("Data deleted successfully!", "success")
 
     }
-
-    // if(target.classList.contains("edit")) {
-
-
-    //     submitBtn.innerText = "Update Info"
-    //     submitBtn.style.backgroundColor = "green"
-        
-    //     prevData = target.parentElement.parentElement        
-    //     form.name.value = prevData.children[0].innerText
-    //     form.age.value = prevData.children[1].innerText
-    //     form.email.value = prevData.children[2].innerText
-    //     form.address.value = prevData.children[3].innerText
-        
-    // }
 })
 
 
@@ -100,8 +86,6 @@ form.addEventListener("submit", (e) => {
     }
 
 })
-
-// ... (rest of the code remains the same)
 
 // Edit Data
 tableBody.addEventListener("click", (e) => {
